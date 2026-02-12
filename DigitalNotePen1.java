@@ -1,12 +1,12 @@
-class DigitalNotePen{
+class DigitalNotePen1{
 static float f=1.0f;
-static int currentBattery=30;
+static int currentBattery=130;
 static int minBattery=20;
 static int maxBattery=40;
 static float writeNotWrite(){
 	if(f==1.0f){
-		if(currentBattery<maxBattery){
-			currentBattery+=1;
+		if(currentBattery>=maxBattery){
+			currentBattery-=1;
 			System.out.println("Digital Pen Battery status is:" +currentBattery );
 	}
 	}

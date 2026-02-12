@@ -1,13 +1,13 @@
-class ElectricHandWarmer{
-static char ch[]={'0','1'};
+class DigitalCamera1{
+static String str[]={"0", "1"};
 static int index=1;
-static int currentPercent=30;
+static int currentPercent=120;
 static int minPercent=40;
 static int maxPercent=70;
-static char onOrOff(){
-	if(index==1){
-		if(currentPercent<maxPercent){
-			currentPercent+=1;
+static  String onOrOff(){
+ 	if(index==1){
+		if(currentPercent>=maxPercent){
+			currentPercent-=1;
 			System.out.println("The camers battery percent is:" +currentPercent);
 		}
 		else{
@@ -20,6 +20,6 @@ static char onOrOff(){
 	else{
 		System.out.println("The Digital camera is shutdown");
 	}
-	return ch[index];
+	return str[index];
   }
  }

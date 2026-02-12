@@ -1,13 +1,13 @@
-class PortableProjector{
+class PortableProjector1{
 static byte by[]={2,4};
 static int index=1;
-static int currentPercent=30;
+static int currentPercent=130;
 static int minPercent=40;
 static int maxPercent=70;
 static byte moveOrNotMove(){
 	if(index==1){
-		if(currentPercent<maxPercent){
-			currentPercent+=1;
+		if(currentPercent>=maxPercent){
+			currentPercent-=1;
 			System.out.println("The projector battery percent is:" +currentPercent);
 		}
 		else{

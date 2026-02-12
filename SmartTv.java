@@ -1,27 +1,32 @@
-class SmartTv{
-static boolean isSwitch=true;
-static int minVolume;
-static int currentVolume=25;
-static int maxVolume=100;
-static boolean onOrOff(){
-	if(isSwitch){
-		if(currentVolume<maxVolume){
-			currentVolume+=1;
-			System.out.println("The TV volume is increased...");
-			System.out.println("The current volume of tv is:" +currentVolume);
+class SmartTV{
+ static String getBrand(){
+	return "LG";
 	}
+ static int getSize(){ 
+	return 55; 
 	}
-	else if(isSwitch==false){
-		 System.out.println("The TV is in sleep mode");
-		}
-	else{
-		System.out.println("Tv not working");
+ static String getResolution(){
+	return "4K"; 
 	}
- return isSwitch;
+ static boolean getWifi(){
+	return true; 
+	}
+ static int getHDMI(){ 
+	return 3; 
+	}
+ static boolean getBluetooth(){
+	return true;
+	}
+ static String getOS(){ 
+	return "WebOS";
+	}
+ static boolean getHDR(){ 
+	return true; 
+	}
+ static double getPrice(){
+	return 65000; 
+	}
+ static int getWarranty(){ 
+	return 2; 
+	}
 }
-
-}
-
-
-
-

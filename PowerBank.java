@@ -1,24 +1,32 @@
 class PowerBank{
-static int isBank=1;
-static int currentVolt=30;
-static int minVolt=20;
-static int maxVolt=50;
-static int getDetails(){
-	if(isBank==1){
-		if(currentVolt<maxVolt){
-			currentVolt+=1;
-			System.out.println("The power bank volt is increased:" +currentVolt);
-		}
-		else{
-			System.out.println("Min power volt");
-		}
-	}
-	else if(isBank==0){
-		System.out.println("The power bank is off");
-	}
-	else{
-		System.out.println("The power bank is shutdown");
-	}
-   return isBank;
-  }
+ static String getBrand(){
+  return "Mi";
  }
+ static int getCapacity(){
+  return 20000;
+ }
+ static boolean getFastCharge(){
+  return true;
+ }
+ static int getPorts(){
+  return 2;
+ }
+ static String getBatteryType(){
+  return "Li-Polymer";
+ }
+ static boolean getLEDIndicator(){
+  return true;
+ }
+ static String getColor(){
+  return "Black";
+ }
+ static int getWeight(){
+  return 450;
+ }
+ static double getPrice(){
+  return 1800;
+ }
+ static int getWarranty(){
+  return 1;
+ }
+}

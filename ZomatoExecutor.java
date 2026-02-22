@@ -2,7 +2,7 @@ class ZomatoExecutor{
 public static void main(String[] args){
 	String foodName="Burger";
 	System.out.print("Location and price details of Burger");
-	String[] items=Zomato.Search(foodName);
+	double items=Zomato.Search(foodName);
 	Zomato.getZomatoDetails(items);
 	
 	System.out.println();
@@ -10,24 +10,12 @@ public static void main(String[] args){
 	System.out.println("Location and price details of Vada");
 	items=Zomato.Search(foodName);
 	Zomato.getZomatoDetails(items);
-	
+
 	System.out.println();
-	foodName="coffee";
-	System.out.println("Location and price details of Vada");
-	items=Zomato.Search(foodName);
+	foodName="Vada";
+	System.out.println("Location and price details of vada is");
+	items=Zomato.Search(foodName, 2);
 	Zomato.getZomatoDetails(items);
-	
-	System.out.println();
-	foodName="rava dose";
-	System.out.println("Location and price details of Vada");
-	items=Zomato.Search(foodName);
-	Zomato.getZomatoDetails(items);
-	
-	System.out.println();
-	foodName="gee rost";
-	System.out.println("Location and price details of Vada");
-	items=Zomato.Search(foodName);
-	Zomato.getZomatoDetails(items);
-	
+	 
 }
 }
